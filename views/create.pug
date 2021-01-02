@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    form(method="POST" action="store").col-md-4.mx-auto
+        .form-group
+            label(for="prImage") Image
+            input(type="file" id="prImage" placeholder="Select Image" class="form-control" required="require")
+            label(for="prCategory") Category
+            select(id="prCategory" name="prCategory" class="form-control" required="require")
+                option(value="T-Shirt" selected) T Shirt
+                option(value="Hoodie") Hoodie
+                option(value="Poster") Poster
+                option(value="Album") Album
+            label(for="prName") Name
+            input(id="prName" name="prName" placeholder="Enter Name" class="form-control" required="require")
+            label(for="prPrice") Price
+            input(id="prPrice" type="number" name="prPrice" placeholder="Enter Price" class="form-control" required="require")
+            label(for="prDetails") Details
+            textarea(id="prDetails" type="number" name="prDetails" placeholder="Enter Details" class="form-control" required="require")
+            input(id="submit" type="submit" name="submit" value="Submit" class="btn btn-success my-3")

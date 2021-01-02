@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Web Terminal Backend
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+
+    <!-- jQuery library -->
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+
+    <!-- Popper JS -->
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+
+    <!-- Latest compiled JavaScript -->
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+
+    link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body(style="padding:0px").h-100.bg-dark
+    .container-fluid.h-100
+      .row
+        .col-md-8.bg-white.mx-auto
+          div.container.text-center
+            h1 ADMIN PANEL
+            h4 Product
+          block content
