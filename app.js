@@ -6,9 +6,9 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 var router = require("./routes/Product");
-
+var cors = require("cors");
 var app = express();
-
+app.use(cors);
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");

@@ -4,7 +4,7 @@ var Product = require("../models/Course");
 /* GET home page. */
 router.get("/showProducts", async function (req, res) {
   let products = await Product.find();
-  return res.json(products);
+  res.json(products);
 });
 
 router.get("/", function (req, res) {
